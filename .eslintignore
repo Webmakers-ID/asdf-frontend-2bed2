@@ -1,0 +1,16 @@
+**/__mocks__
+**/.cache/
+**/.storybook/
+**/coverage/
+**/.git/
+**/node_modules/
+**/public/
+**/__stories__/
+**/__tests__/
+**/assets/
+**/services/
+**/gatsby-config.js
+**/gatsby-node.js
+**/jest-preprocess.js
+**/jest.config.js
+**/loadershim.js

@@ -1,7 +1,9 @@
 module.exports = {
-  pathPrefix: `/mini-gatsbyv2-material-kit-react`,
   siteMetadata: {
-    title: 'Gatsby Default Starter',
+    title: `ASDF Technology`,
+    description: `PT AS Digital Future Technology is a leading IT Company From Indonesia!`,
+    author: `@asdf.technology`,
+    viewPortScale: `width=device-width, initial-scale=0.9, shrink-to-fit=no`,
   },
   plugins: [
     'gatsby-plugin-resolve-src',
@@ -9,6 +11,22 @@ module.exports = {
     'gatsby-plugin-offline',
     'gatsby-plugin-sass',
     'gatsby-plugin-material-ui',
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `assets`,
+        path: `${__dirname}/src/assets`,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-styled-components`,
+      options: {
+        pure: true,
+        displayName: process.env.GATSBY_PRODUCTION !== "TRUE",
+      },
+    },
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {

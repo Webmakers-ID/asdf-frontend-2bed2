@@ -1,0 +1,168 @@
+/* roboto-regular - latin */
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/roboto-v27-latin-regular.eot"); /* IE9 Compat Modes */
+  src: local(""),
+    url("../fonts/roboto-v27-latin-regular.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/roboto-v27-latin-regular.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("../fonts/roboto-v27-latin-regular.woff")
+      format("woff"),
+    /* Modern Browsers */ url("../fonts/roboto-v27-latin-regular.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("../fonts/roboto-v27-latin-regular.svg#Roboto") format("svg"); /* Legacy iOS */
+}
+
+/* montserrat-regular - latin */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/montserrat-v15-latin-regular.eot"); /* IE9 Compat Modes */
+  src: local(""),
+    url("../fonts/montserrat-v15-latin-regular.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/montserrat-v15-latin-regular.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */
+      url("../fonts/montserrat-v15-latin-regular.woff") format("woff"),
+    /* Modern Browsers */ url("../fonts/montserrat-v15-latin-regular.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("../fonts/montserrat-v15-latin-regular.svg#Montserrat") format("svg"); /* Legacy iOS */
+}
+
+html {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  scroll-behavior: smooth;
+}
+
+html,
+body,
+main {
+  width: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: "Roboto", sans-serif, serif;
+}
+
+#___gatsby,
+#gatsby-focus-wrapper {
+  height: 100%;
+  width: 100%;
+}
+
+#tsparticles {
+  height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: bold;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px 20px;
+  background-color: #f2f2f2;
+  border: none;
+  border-radius: 29px !important;
+}
+
+input:read-only,
+textarea:read-only {
+  color: gray;
+}
+
+.taman-input label {
+  font-weight: bold;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+}
+
+/* Material-UI */
+.MuiOutlinedInput-notchedOutline {
+  border: 0;
+}
+
+.MuiCircularProgress-colorPrimary {
+  color: white !important;
+}
+
+/* convenience */
+.layout {
+  max-width: 1300px;
+  padding: 0 12px 0 12px;
+  margin: auto;
+}
+
+/* react-toastify */
+.Toastify__toast {
+  text-align: center;
+  border-radius: 5px;
+  padding-left: 20px;
+  font-family: "Roboto", sans-serif, serif;
+}
+
+.Toastify__toast--error {
+  background: #e2354f;
+}
+
+.Toastify__toast--default {
+  color: black;
+}
+
+/* react-slick */
+.slick-slider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slick-list {
+  width: calc(100% - 75px);
+  display: inline-block;
+  overflow: hidden;
+}
+
+.slick-track {
+  display: flex;
+}
+
+.slick-arrow {
+  width: 30px;
+  display: inline-block !important;
+  cursor: pointer;
+}
+
+.slick-arrow:hover {
+  opacity: 0.8;
+}
+
+.user-notifikasi-drawer {
+  padding: 20px;
+  width: 450px;
+}
+
+@media only screen and (max-width: 500px) {
+  .user-notifikasi-drawer {
+    width: calc(100vw - 75px);
+  }
+}
