@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `ASDF Technology`,
     description: `PT AS Digital Future Technology is a leading IT Company From Indonesia!`,
-    author: `@asdf.technology`,
+    author: `@asdftechnology.id`,
     viewPortScale: `width=device-width, initial-scale=0.9, shrink-to-fit=no`,
   },
   plugins: [
