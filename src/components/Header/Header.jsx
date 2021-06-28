@@ -75,7 +75,9 @@ class Header extends React.Component {
     });
     const brandComponent = <Button className={classes.title}>{brand}</Button>;
     return (
-      <AppBar className={appBarClasses}>
+      <AppBar className={appBarClasses} style={{
+        color: "black"
+      }}>
         <Toolbar className={classes.container}>
           {leftLinks !== undefined ? brandComponent : null}
           <div className={classes.flex}>

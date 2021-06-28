@@ -1,3 +1,22 @@
+/* poppins-regular - latin */
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/poppins-v15-latin-regular.eot"); /* IE9 Compat Modes */
+  src: local(""),
+    url("../fonts/poppins-v15-latin-regular.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/poppins-v15-latin-regular.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */ url("../fonts/poppins-v15-latin-regular.woff")
+      format("woff"),
+    /* Modern Browsers */ url("../fonts/poppins-v15-latin-regular.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("../fonts/poppins-v15-latin-regular.svg#Poppins") format("svg"); /* Legacy iOS */
+}
+
 html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -14,7 +33,6 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-  /* font-family: "Roboto", sans-serif, serif; */
 }
 
 #___gatsby,

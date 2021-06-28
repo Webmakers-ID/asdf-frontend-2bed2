@@ -1,13 +1,14 @@
-/*eslint-disable*/
 import React from "react";
-// nodejs library to set properties for components
-import PropTypes from "prop-types";
-// nodejs library that concatenates classes
-import classNames from "classnames";
-import { List, ListItem, withStyles } from "@material-ui/core";
+import { Link } from "gatsby"
 
-// @material-ui/icons
-import Favorite from "@material-ui/icons/Favorite";
+import PropTypes from "prop-types";
+
+import classNames from "classnames";
+import Tooltip from "@material-ui/core/Tooltip";
+import { List, ListItem, withStyles } from "@material-ui/core";
+import { FaLinkedin, FaFacebook, FaInstagram } from 'react-icons/fa';
+
+import Button from "components/CustomButtons/Button.jsx";
 
 import footerStyle from "assets/jss/material-kit-react/components/footerStyle.jsx";
 
@@ -17,64 +18,100 @@ function Footer({ ...props }) {
     [classes.footer]: true,
     [classes.footerWhiteFont]: whiteFont
   });
-  const aClasses = classNames({
-    [classes.a]: true,
-    [classes.footerWhiteFont]: whiteFont
-  });
   return (
     <footer className={footerClasses}>
       <div className={classes.container}>
         <div className={classes.left}>
           <List className={classes.list}>
             <ListItem className={classes.inlineBlock}>
-              <a
-                href="https://www.creative-tim.com/"
+              <Link
+                to="/about"
                 className={classes.block}
-                target="_blank"
-              >
-                Creative Tim
-              </a>
-            </ListItem>
-            <ListItem className={classes.inlineBlock}>
-              <a
-                href="https://www.creative-tim.com/presentation"
-                className={classes.block}
-                target="_blank"
               >
                 About us
-              </a>
+              </Link>
             </ListItem>
             <ListItem className={classes.inlineBlock}>
-              <a
-                href="http://blog.creative-tim.com/"
+              <Link
+                to="/blog"
                 className={classes.block}
-                target="_blank"
               >
                 Blog
-              </a>
+              </Link>
             </ListItem>
             <ListItem className={classes.inlineBlock}>
-              <a
-                href="https://www.creative-tim.com/license"
+              <Link
+                to="/terms-and-conditions"
                 className={classes.block}
-                target="_blank"
               >
-                Licenses
-              </a>
+                Terms &amp; Conditions
+              </Link>
+            </ListItem>
+            <ListItem className={classes.inlineBlock}>
+              <Link
+                to="/privacy-policy"
+                className={classes.block}
+              >
+                Privacy Policy
+              </Link>
+            </ListItem>
+            <ListItem className={classes.inlineBlock}>
+              <Tooltip
+                id="instagram-twitter"
+                title="Follow us on linkedin"
+                placement="top"
+                classes={{ tooltip: classes.tooltip }}
+              >
+                <Button
+                  href="https://www.linkedin.com/company/webmakers-id"
+                  target="_blank"
+                  color="transparent"
+                  className={classes.block}
+                >
+                  <FaLinkedin/>
+                </Button>
+              </Tooltip>
+            </ListItem>
+            <ListItem className={classes.inlineBlock}>
+              <Tooltip
+                id="instagram-facebook"
+                title="Follow us on facebook"
+                placement="top"
+                classes={{ tooltip: classes.tooltip }}
+              >
+                <Button
+                  color="transparent"
+                  href="https://www.facebook.com/CreativeTim"
+                  target="_blank"
+                  className={classes.block}
+                >
+                  <FaFacebook/>
+                </Button>
+              </Tooltip>
+            </ListItem>
+            <ListItem className={classes.inlineBlock}>
+              <Tooltip
+                id="instagram-tooltip"
+                title="Follow us on instagram"
+                placement="top"
+                classes={{ tooltip: classes.tooltip }}
+              >
+                <Button
+                  color="transparent"
+                  href="https://www.instagram.com/CreativeTimOfficial"
+                  target="_blank"
+                  className={classes.block}
+                >
+                  <FaInstagram/>
+                </Button>
+              </Tooltip>
             </ListItem>
           </List>
         </div>
         <div className={classes.right}>
-          &copy; {1900 + new Date().getYear()} , made with{" "}
-          <Favorite className={classes.icon} /> by{" "}
-          <a
-            href="https://www.creative-tim.com"
-            className={aClasses}
-            target="_blank"
-          >
-            Creative Tim
-          </a>{" "}
-          for a better web.
+          &copy; {1900 + new Date().getYear()}
+          {" "}
+          PT As Digital First
         </div>
       </div>
     </footer>

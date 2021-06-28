@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `ASDF Technology`,
-    description: `PT AS Digital Future Technology is a leading IT Company From Indonesia!`,
+    description: `PT As Digital First is a leading IT Company From Indonesia. We specializes on Web Application, Big Data, and Artificial Intelligence. Contact us for Business Inquiries`,
     author: `@asdftechnology.id`,
     viewPortScale: `width=device-width, initial-scale=0.9, shrink-to-fit=no`,
   },

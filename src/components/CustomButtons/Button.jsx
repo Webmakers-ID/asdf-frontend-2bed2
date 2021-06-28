@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "gatsby"
 // nodejs library to set properties for components
 import PropTypes from "prop-types";
 // nodejs library that concatenates classes
@@ -14,6 +15,7 @@ import buttonStyle from "assets/jss/material-kit-react/components/buttonStyle.js
 
 function RegularButton({ ...props }) {
   const {
+    to,
     classes,
     color,
     round,
@@ -41,7 +43,15 @@ function RegularButton({ ...props }) {
     [classes.justIcon]: justIcon,
     [className]: className
   });
-  return (
+  return to ? (
+    <Button {...rest} className={btnClasses}>
+      <Link to={to} style={{
+        color: "unset"
+      }}>
+        {children}
+      </Link>
+    </Button>
+    ) : (
     <Button {...rest} className={btnClasses}>
       {children}
     </Button>

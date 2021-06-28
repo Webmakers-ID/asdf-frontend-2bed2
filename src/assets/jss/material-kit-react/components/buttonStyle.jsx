@@ -10,6 +10,7 @@ import {
 
 const buttonStyle = {
   button: {
+    fontFamily: '"Poppins", Helvetica, Arial, sans-serif',
     minHeight: "auto",
     minWidth: "auto",
     backgroundColor: grayColor,

@@ -10,6 +10,7 @@ import {
 const typographyStyle = {
   defaultFontStyle: {
     ...defaultFont,
+    fontFamily: '"Poppins", Helvetica, Arial, sans-serif',
     fontSize: "14px"
   },
   defaultHeaderMargins: {

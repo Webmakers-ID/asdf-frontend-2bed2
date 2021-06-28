@@ -4,11 +4,6 @@ import classNames from "classnames";
 // @material-ui/core components
 import withStyles from "@material-ui/core/styles/withStyles";
 
-// @material-ui/icons
-
-// React icons
-import { FaPlay } from 'react-icons/fa';
-
 // core components
 import GridContainer from "components/Grid/GridContainer.jsx";
 import GridItem from "components/Grid/GridItem.jsx";
@@ -27,27 +22,24 @@ class LandingPage extends React.Component {
     const { classes } = this.props;
     return (
       <div>
-        <Parallax filter image={require("assets/img/landing-bg.jpg")}>
+        <Parallax image={require("assets/img/TopLandingBg1.png")}>
           <div className={classes.container}>
             <GridContainer>
               <GridItem xs={12} sm={12} md={6}>
-                <h1 className={classes.title}>Your Story Starts With Us.</h1>
+                <h1 className={classes.title}>Enterprise-Grade Digital Solutions for your Business</h1>
                 <h4>
-                  Every landing page needs a small description after the big
-                  bold title, that's why we added this text here. Add here all
-                  the information that can make you or your product create the
-                  first impression.
+                  We are a team of experts in Web Application, Big Data, and Artificial Intelligence.
+                  We provide enterprises with the necessary technology to solve their
+                  business problems.
                 </h4>
                 <br />
                 <Button
                   color="danger"
                   size="lg"
-                  href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  to="/services"
+                  round
                 >
-                  <FaPlay/>
-                  Watch video
+                  Our Services
                 </Button>
               </GridItem>
             </GridContainer>
