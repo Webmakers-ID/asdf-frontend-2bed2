@@ -24,7 +24,7 @@ const typographyStyle = {
     width: "100%"
   },
   note: {
-    fontFamily: '"Poppins", "Helvetica", "Arial", sans-serif',
+    fontFamily: '"Inter", "Helvetica", "Arial", sans-serif',
     bottom: "10px",
     color: "#c0c1c2",
     display: "block",

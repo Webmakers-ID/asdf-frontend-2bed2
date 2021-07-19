@@ -15,7 +15,7 @@ import "./layout.css"
 const theme = createMuiTheme({
   typography: {
     fontFamily: [
-      '"Poppins"',
+      '"Inter"',
       "Helvetica",
       "Arial",
       "sans-serif"

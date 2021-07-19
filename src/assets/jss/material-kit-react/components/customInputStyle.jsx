@@ -67,7 +67,7 @@ const customInputStyle = {
     color: "#495057",
     "&,&::placeholder": {
       fontSize: "14px",
-      fontFamily: '"Poppins", "Helvetica", "Arial", sans-serif',
+      fontFamily: '"Inter", "Helvetica", "Arial", sans-serif',
       fontWeight: "400",
       lineHeight: "1.42857",
       opacity: "1"

@@ -12,7 +12,7 @@ const headerLinksStyle = theme => ({
     paddingTop: "0",
     paddingBottom: "0",
     color: "inherit",
-    fontFamily: '"Poppins", Helvetica, Arial, sans-serif'
+    fontFamily: '"Inter", Helvetica, Arial, sans-serif'
   },
   listItem: {
     float: "left",
