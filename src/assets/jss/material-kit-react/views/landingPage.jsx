@@ -10,10 +10,13 @@ const landingPageStyle = {
     ...title,
     display: "inline-block",
     position: "relative",
-    marginTop: "30px",
+    marginTop: "50px",
     minHeight: "32px",
     color: "black",
-    textDecoration: "none"
+    textDecoration: "none",
+    "@media (max-width: 650px)": {
+      fontSize: "2.25em"
+    }
   },
   subtitle: {
     fontSize: "1.313rem",

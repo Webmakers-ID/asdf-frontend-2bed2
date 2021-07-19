@@ -26,21 +26,13 @@ class LandingPage extends React.Component {
           <div className={classes.container}>
             <GridContainer>
               <GridItem xs={12} sm={12} md={6}>
-                <h1 className={classes.title}>Enterprise-Grade Digital Solutions for your Business</h1>
+                <h1 className={classes.title}>Solusi Digital Berkualitas Tinggi</h1>
                 <h4>
-                  We are a team of experts in Web Application, Big Data, and Artificial Intelligence.
-                  We provide enterprises with the necessary technology to solve their
-                  business problems.
+                  ASDF Technology menghadirkan solusi digital untuk bisnis Anda. Mulai dari Pembuatan Aplikasi
+                  Kustom, <i>Digital Marketing</i>, hingga <i>Artificial Intelligence</i>. Solusi yang kami buat
+                  didesain untuk menyelesaikan masalah dengan efektif dan efisien.
                 </h4>
                 <br />
-                <Button
-                  color="danger"
-                  size="lg"
-                  to="/services"
-                  round
-                >
-                  Our Services
-                </Button>
               </GridItem>
             </GridContainer>
           </div>
