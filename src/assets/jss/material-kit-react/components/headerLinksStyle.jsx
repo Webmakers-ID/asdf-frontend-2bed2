@@ -1,5 +1,6 @@
 import { defaultFont } from "assets/jss/material-kit-react.jsx";
 
+import { greenColor } from "assets/jss/material-kit-react";
 import tooltip from "assets/jss/material-kit-react/tooltipsStyle.jsx";
 
 const headerLinksStyle = theme => ({
@@ -25,8 +26,9 @@ const headerLinksStyle = theme => ({
     "&:last-child": {
       marginLeft: "10px",
       "& > button": {
-        paddingLeft: "20px",
-        paddingRight: "20px"
+        color: greenColor,
+        fontWeight: "bold",
+        padding: "12px 18px"
       }
     },
     [theme.breakpoints.down("sm")]: {
@@ -59,9 +61,6 @@ const headerLinksStyle = theme => ({
     margin: "0px",
     display: "inline-flex",
     transition: "opacity .25s",
-    "&:hover,&:focus": {
-      opacity: "0.6"
-    },
     [theme.breakpoints.down("sm")]: {
       width: "calc(100% - 30px)",
       marginLeft: "15px",
@@ -95,10 +94,6 @@ const headerLinksStyle = theme => ({
     textDecoration: "none",
     margin: "0px",
     display: "inline-flex"
-  },
-  navLinkActive: {
-    color: "inherit",
-    backgroundColor: "rgba(255, 255, 255, 0.1)"
   },
   icons: {
     width: "20px",

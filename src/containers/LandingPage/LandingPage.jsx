@@ -7,14 +7,14 @@ import withStyles from "@material-ui/core/styles/withStyles";
 // core components
 import GridContainer from "components/Grid/GridContainer.jsx";
 import GridItem from "components/Grid/GridItem.jsx";
-import Button from "components/CustomButtons/Button.jsx";
 import Parallax from "components/Parallax/Parallax.jsx";
 
 import landingPageStyle from "assets/jss/material-kit-react/views/landingPage.jsx";
 
 // Sections for this page
 import ProductSection from "./Sections/ProductSection.jsx";
-import TeamSection from "./Sections/TeamSection.jsx";
+import ServicesSection from "./Sections/ServicesSection.jsx";
+import AboutSection from "./Sections/AboutSection.jsx";
 import WorkSection from "./Sections/WorkSection.jsx";
 
 class LandingPage extends React.Component {
@@ -40,7 +40,10 @@ class LandingPage extends React.Component {
         <div className={classNames(classes.main, classes.mainRaised)}>
           <div className={classes.container}>
             <ProductSection />
-            <TeamSection />
+          </div>
+            <ServicesSection />
+          <div className={classes.container}>
+            <AboutSection />
             <WorkSection />
           </div>
         </div>

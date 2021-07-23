@@ -23,6 +23,7 @@
     "classnames": "^2.2.6",
     "core-js": "^2.6.5",
     "gatsby": "^2.32.11",
+    "gatsby-background-image": "^1.5.3",
     "gatsby-image": "^3.8.0",
     "gatsby-plugin-manifest": "^3.3.0",
     "gatsby-plugin-material-ui": "1.2.5",

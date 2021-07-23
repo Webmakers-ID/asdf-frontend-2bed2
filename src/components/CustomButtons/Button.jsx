@@ -28,6 +28,7 @@ function RegularButton({ ...props }) {
     link,
     justIcon,
     className,
+    activeStyle,
     ...rest
   } = props;
   const btnClasses = classNames({
@@ -47,7 +48,7 @@ function RegularButton({ ...props }) {
     <Button {...rest} className={btnClasses}>
       <Link to={to} style={{
         color: "unset"
-      }}>
+      }} activeStyle={activeStyle}>
         {children}
       </Link>
     </Button>

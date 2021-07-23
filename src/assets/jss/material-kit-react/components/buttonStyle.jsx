@@ -5,7 +5,8 @@ import {
   infoColor,
   successColor,
   warningColor,
-  dangerColor
+  dangerColor,
+  greenColor
 } from "assets/jss/material-kit-react.jsx";
 
 const buttonStyle = {
@@ -18,12 +19,12 @@ const buttonStyle = {
     boxShadow:
       "0 2px 2px 0 rgba(153, 153, 153, 0.14), 0 3px 1px -2px rgba(153, 153, 153, 0.2), 0 1px 5px 0 rgba(153, 153, 153, 0.12)",
     border: "none",
-    borderRadius: "3px",
+    borderRadius: "8px",
     position: "relative",
     padding: "12px 30px",
     margin: ".3125rem 1px",
     fontSize: "12px",
-    fontWeight: "400",
+    fontWeight: "bold",
     textTransform: "uppercase",
     letterSpacing: "0",
     willChange: "box-shadow, transform",
@@ -76,13 +77,16 @@ const buttonStyle = {
     width: "100%"
   },
   primary: {
-    backgroundColor: primaryColor,
+    border: `2px solid ${greenColor}`,
+    color: greenColor,
+    backgroundColor: "transparent",
     boxShadow:
-      "0 2px 2px 0 rgba(156, 39, 176, 0.14), 0 3px 1px -2px rgba(156, 39, 176, 0.2), 0 1px 5px 0 rgba(156, 39, 176, 0.12)",
+      `0 2px 2px 0 rgba(80, 167, 194, 0.14), 0 3px 1px -2px rgba(80, 167, 194, 0.2), 0 1px 5px 0 rgba(80, 167, 194, 0.12)`,
     "&:hover,&:focus": {
-      backgroundColor: primaryColor,
+      color: greenColor,
+      backgroundColor: "transparent",
       boxShadow:
-        "0 14px 26px -12px rgba(156, 39, 176, 0.42), 0 4px 23px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(156, 39, 176, 0.2)"
+        "0 14px 26px -12px rgba(80, 167, 194, 0.42), 0 4px 23px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(80, 167, 194, 0.2)"
     }
   },
   info: {
@@ -197,7 +201,7 @@ const buttonStyle = {
     },
     "&$primary": {
       "&,&:focus,&:hover,&:visited": {
-        color: primaryColor
+        color: greenColor
       }
     },
     "&$info": {
