@@ -15,6 +15,7 @@ import landingPageStyle from "assets/jss/material-kit-react/views/landingPage.js
 import ProductSection from "./Sections/ProductSection.jsx";
 import ServicesSection from "./Sections/ServicesSection.jsx";
 import AboutSection from "./Sections/AboutSection.jsx";
+import ProjectSection from "./Sections/ProjectSection.jsx"
 import WorkSection from "./Sections/WorkSection.jsx";
 
 class LandingPage extends React.Component {
@@ -44,6 +45,7 @@ class LandingPage extends React.Component {
             <ServicesSection />
           <div className={classes.container}>
             <AboutSection />
+            <ProjectSection />
             <WorkSection />
           </div>
         </div>

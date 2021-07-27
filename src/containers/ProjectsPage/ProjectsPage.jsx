@@ -12,6 +12,7 @@ import Parallax from "components/Parallax/Parallax.jsx";
 import landingPageStyle from "assets/jss/material-kit-react/views/landingPage.jsx";
 
 // Sections for this page
+import AllProjectSection from "./Sections/AllProjectSection"
 
 class ProjectsPage extends React.Component {
   render() {
@@ -35,7 +36,7 @@ class ProjectsPage extends React.Component {
         </Parallax>
         <div className={classNames(classes.main, classes.mainRaised)}>
           <div className={classes.container}>
-            Lorem ipsum
+            <AllProjectSection/>
           </div>
         </div>
       </div>
