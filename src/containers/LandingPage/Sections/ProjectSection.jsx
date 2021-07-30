@@ -101,6 +101,10 @@ function ProjectSection({ classes }) {
     <div className={classes.section}>
       <GridContainer justify="center">
         <GridItem xs={12} sm={12} md={8}>
+          <div id="projects" style={{
+            position: "relative",
+            bottom: "75px"
+          }} />
           <h5 className={classes.description}>PROYEK</h5>
           <h2 className={classes.title}>Proyek Kami</h2>
         </GridItem>
@@ -115,7 +119,7 @@ function ProjectSection({ classes }) {
       <div style={{
         paddingTop: "1.5rem"
       }}>
-        <Button color="primary">Lihat Semua</Button>
+        <Button color="primary" to="/projects">Lihat Semua</Button>
       </div>
     </div>
   )

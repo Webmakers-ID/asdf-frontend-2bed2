@@ -43,6 +43,10 @@ const ServicesSection = ({ classes }) => {
     <div className={classes.section}>
       <GridContainer justify="center">
         <GridItem xs={12} sm={12} md={8}>
+          <div id="services" style={{
+            position: "relative",
+            bottom: "75px"
+          }} />
           <h5 className={classes.description}>LAYANAN</h5>
           <h2 className={classes.title}>Layanan ASDF</h2>
         </GridItem>

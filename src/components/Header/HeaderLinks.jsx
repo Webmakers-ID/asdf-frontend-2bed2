@@ -40,7 +40,7 @@ function HeaderLinks({ ...props }) {
       </ListItem>
       <ListItem className={classes.listItem}>
         <Button
-          to="/services"
+          href="/#services"
           color="transparent"
           className={classes.navLink}
           activeStyle={linkActiveStyle}
@@ -56,16 +56,6 @@ function HeaderLinks({ ...props }) {
           activeStyle={linkActiveStyle}
         >
           Tim ASDF
-        </Button>
-      </ListItem>
-      <ListItem className={classes.listItem}>
-        <Button
-          to="/blog"
-          color="transparent"
-          className={classes.navLink}
-          activeStyle={linkActiveStyle}
-        >
-          Blog
         </Button>
       </ListItem>
       <ListItem className={classes.listItem}>

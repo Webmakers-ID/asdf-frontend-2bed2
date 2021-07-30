@@ -6,7 +6,7 @@ import LandingPage from "../containers/LandingPage/LandingPage"
 
 export default () => (
   <Layout>
-    <SEO title="Landing Page" />
+    <SEO title="Solusi Digital Berkualitas Tinggi" />
     <LandingPage />
   </Layout>
 )

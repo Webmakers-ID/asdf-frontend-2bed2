@@ -73,7 +73,7 @@ function Footer({ ...props }) {
               >
                 <Button
                   color="transparent"
-                  href="https://www.facebook.com/CreativeTim"
+                  href="https://www.facebook.com/webmakers.id"
                   target="_blank"
                   className={classes.block}
                 >
@@ -90,7 +90,7 @@ function Footer({ ...props }) {
               >
                 <Button
                   color="transparent"
-                  href="https://www.instagram.com/CreativeTimOfficial"
+                  href="https://www.instagram.com/asdftech.id"
                   target="_blank"
                   className={classes.block}
                 >

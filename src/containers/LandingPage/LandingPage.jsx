@@ -12,7 +12,7 @@ import Parallax from "components/Parallax/Parallax.jsx";
 import landingPageStyle from "assets/jss/material-kit-react/views/landingPage.jsx";
 
 // Sections for this page
-import ProductSection from "./Sections/ProductSection.jsx";
+// import ProductSection from "./Sections/ProductSection.jsx";
 import ServicesSection from "./Sections/ServicesSection.jsx";
 import AboutSection from "./Sections/AboutSection.jsx";
 import ProjectSection from "./Sections/ProjectSection.jsx"
@@ -39,10 +39,10 @@ class LandingPage extends React.Component {
           </div>
         </Parallax>
         <div className={classNames(classes.main, classes.mainRaised)}>
-          <div className={classes.container}>
+          {/* <div className={classes.container}>
             <ProductSection />
-          </div>
-            <ServicesSection />
+          </div> */}
+          <ServicesSection />
           <div className={classes.container}>
             <AboutSection />
             <ProjectSection />

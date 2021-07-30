@@ -24,7 +24,7 @@ class ContactPage extends React.Component {
           <div className={classes.container}>
             <GridContainer>
               <GridItem xs={12} sm={12} md={6}>
-                <h1 className={classes.title}>Contact Us</h1>
+                <h1 className={classes.title}>Hubungi Kami</h1>
                 <h4>
                   Dapatkan estimasi biaya proyek gratis dari kami. Tulis data diri Anda di bawah ini dan tim
                   kami akan menghubungi Anda.

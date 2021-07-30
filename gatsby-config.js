@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `ASDF Technology`,
-    description: `PT As Digital First is a leading IT Company From Indonesia. We specializes on Web Application, Big Data, and Artificial Intelligence. Contact us for Business Inquiries`,
+    description: `ASDF Technology menghadirkan solusi digital untuk bisnis Anda. Mulai dari Pembuatan Aplikasi Kustom, Digital Marketing, hingga Artificial Intelligence. Solusi yang kami buat didesain untuk menyelesaikan masalah dengan efektif dan efisien.`,
     author: `@asdftechnology.id`,
     viewPortScale: `width=device-width, initial-scale=0.9, shrink-to-fit=no`,
   },
