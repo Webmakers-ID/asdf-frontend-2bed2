@@ -25,11 +25,12 @@ class TeamPage extends React.Component {
           <div className={classes.container}>
             <GridContainer>
               <GridItem xs={12} sm={12} md={6}>
-                <h1 className={classes.title}>Welcome to The Team Page</h1>
+                <h1 className={classes.title}>Tim Kami</h1>
                 <h4>
-                  ASDF Technology menghadirkan solusi digital untuk bisnis Anda. Mulai dari Pembuatan Aplikasi
-                  Kustom, <i>Digital Marketing</i>, hingga <i>Artificial Intelligence</i>. Solusi yang kami buat
-                  didesain untuk menyelesaikan masalah dengan efektif dan efisien.
+                  ASDF Technology terdiri dari para ahli di bidang Desain dan Pembuatan Aplikasi
+                  Digital. Mayoritas anggota tim kami juga telah menempuh pendidikan tinggi di jurusan
+                  Ilmu Komputer dan Sistem Informasi. Konsentrasi kami tersebar di dalam bidang
+                  Teknologi Informasi.
                 </h4>
                 <br />
               </GridItem>

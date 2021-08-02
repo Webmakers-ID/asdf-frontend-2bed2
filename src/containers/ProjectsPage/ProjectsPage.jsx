@@ -13,6 +13,7 @@ import landingPageStyle from "assets/jss/material-kit-react/views/landingPage.js
 
 // Sections for this page
 import AllProjectSection from "./Sections/AllProjectSection"
+import WorkSection from "../LandingPage/Sections/WorkSection.jsx";
 
 class ProjectsPage extends React.Component {
   render() {
@@ -23,11 +24,11 @@ class ProjectsPage extends React.Component {
           <div className={classes.container}>
             <GridContainer>
               <GridItem xs={12} sm={12} md={6}>
-                <h1 className={classes.title}>Dis is Projects Page!</h1>
+                <h1 className={classes.title}>Proyek-proyek Kami</h1>
                 <h4>
-                  ASDF Technology menghadirkan solusi digital untuk bisnis Anda. Mulai dari Pembuatan Aplikasi
-                  Kustom, <i>Digital Marketing</i>, hingga <i>Artificial Intelligence</i>. Solusi yang kami buat
-                  didesain untuk menyelesaikan masalah dengan efektif dan efisien.
+                  ASDF Technology berpengalaman dalam menggunakan teknologi modern
+                  untuk membuat aplikasi yang diinginkan klien. Berikut adalah
+                  proyek-proyek paling menarik yang pernah tim kami buat.
                 </h4>
                 <br />
               </GridItem>
@@ -37,6 +38,7 @@ class ProjectsPage extends React.Component {
         <div className={classNames(classes.main, classes.mainRaised)}>
           <div className={classes.container}>
             <AllProjectSection/>
+            <WorkSection />
           </div>
         </div>
       </div>

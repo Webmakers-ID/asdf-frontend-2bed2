@@ -13,17 +13,17 @@ const valuesList = [
   {
     imgName: "our_value_1.png",
     title: "Fokus pada Masalah",
-    desc: "Loremipsum dolor sit amet. Lorem ipsum dolor sit amet."
+    desc: "Kami percaya bahwa solusi digital harus memiliki nilai guna kepada penggunanya. Sehingga penting untuk selalu fokus kepada masalah yang ingin diselesaikan."
   },
   {
     imgName: "our_value_2.png",
     title: "Terus Belajar",
-    desc: "Loremipsum dolor sit amet. Lorem ipsum dolor sit amet."
+    desc: "Kami percaya bahwa belajar tidak berhenti di bangku sekolah dan perkuliahan. Kami menanamkan budaya pembelajaran seumur hidup di ASDF Technology."
   },
   {
     imgName: "our_value_3.png",
     title: "Solusi Inovatif",
-    desc: "Loremipsum dolor sit amet. Lorem ipsum dolor sit amet."
+    desc: "Dengan berbagai pengalaman menyelesaikan masalah bisnis di Indonesia, kami memahami solusi-solusi inovatif terbaru di bidang Teknologi Informasi."
   }
 ]
 
