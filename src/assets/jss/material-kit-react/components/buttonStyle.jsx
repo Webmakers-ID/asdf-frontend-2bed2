@@ -79,12 +79,14 @@ const buttonStyle = {
   primary: {
     border: `2px solid ${greenColor}`,
     color: greenColor,
-    backgroundColor: "transparent",
+    background: "transparent",
     boxShadow:
       `0 2px 2px 0 rgba(80, 167, 194, 0.14), 0 3px 1px -2px rgba(80, 167, 194, 0.2), 0 1px 5px 0 rgba(80, 167, 194, 0.12)`,
     "&:hover,&:focus": {
-      color: greenColor,
-      backgroundColor: "transparent",
+      //# di !important karena right navlinknya ditimpa warna lain (belum cek)
+      color: "white!important",
+      backgroundColor: "rgb(80, 167, 194)",
+      // background: "linear-gradient(135deg, rgb(80,167,194), rgb(151,255,209))",
       boxShadow:
         "0 14px 26px -12px rgba(80, 167, 194, 0.42), 0 4px 23px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(80, 167, 194, 0.2)"
     }
