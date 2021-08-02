@@ -12,8 +12,10 @@ const landingPageStyle = {
     position: "relative",
     marginTop: "50px",
     minHeight: "32px",
-    color: "black",
-    textDecoration: "none",
+    background: "-webkit-linear-gradient(-45deg, rgb(61,78,129) 0%, rgb(87,83,201) 50%, rgb(110,127,243) 100%)",
+    "-webkit-background-clip": "text",
+    "-webkit-text-fill-color": "transparent",
+    // textDecoration: "none",
     "@media (max-width: 650px)": {
       fontSize: "2.25em"
     }
