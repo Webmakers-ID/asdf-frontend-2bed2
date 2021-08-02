@@ -94,6 +94,12 @@ function ProjectSection({ classes }) {
           slidesToShow: 2,
         },
       },
+      {
+        breakpoint: 450,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
     ],
   }
 

@@ -14,27 +14,27 @@ const servicesList = [
   {
     title: "Web<br/>Development",
     desc: "Lorem ipsum dolor sit amet",
-    img: "clem-onojegaw.jpg"
+    img: "3. Our Service - Web Dev Section.png"
   },
   {
     title: "UI/UX<br/>Design",
     desc: "Lorem ipsum dolor sit amet",
-    img: "clem-onojegaw.jpg"
+    img: "3. Our Service - UIUX Section.png"
   },
   {
     title: "Digital<br/>Marketing",
     desc: "Lorem ipsum dolor sit amet",
-    img: "clem-onojegaw.jpg"
+    img: "3. Our Service - Digital Marketing Section.png"
   },
   {
     title: "Mobile App<br/>Development",
     desc: "Lorem ipsum dolor sit amet",
-    img: "clem-onojegaw.jpg"
+    img: "3. Our Service - Mobile App Section.png"
   },
   {
     title: "Machine<br/>Learning",
     desc: "Lorem ipsum dolor sit amet",
-    img: "clem-onojegaw.jpg"
+    img: "3. Our Service - ML Section.png"
   },
 ]
 
