@@ -20,6 +20,7 @@ const servicesStyle = {
     display: "flex"
   },
   oneService: {
+    padding: "25px 0",
     width: "20%",
     minHeight: "600px",
     display: "flex",
