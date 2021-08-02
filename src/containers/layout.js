@@ -33,7 +33,8 @@ const Layout = ({ children, noFooter }) => {
       <Header
         color="transparent"
         routes={dashboardRoutes}
-        brand="ASDF Technology"
+        brand="asdf-logo-white.png"
+        brandOnScroll="asdf-logo.png"
         rightLinks={<HeaderLinks />}
         fixed
         changeColorOnScroll={{
