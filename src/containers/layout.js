@@ -44,7 +44,10 @@ const Layout = ({ children, noFooter }) => {
       />
       <div id="all-wrapper">
         <main>{children}</main>
-        {noFooter ? <></> : <Footer />}
+        {noFooter ? <></> : 
+        <Footer
+          brand="asdf-logo-white.png"
+        />}
       </div>
     </ThemeProvider>
   )

@@ -12,6 +12,25 @@ const footerStyle = {
     position: "relative",
     display: "block"
   },
+  flex: {
+    display: "flex",
+  },
+  flexCol: {
+    flexBasis: "24%",
+    margin: "0 1%"
+  },
+  subHeader: {
+    margin: "0.98rem 0",
+    fontWeight: "500",
+    textTransform: "uppercase",
+    lineHeight: "29px",
+    letterSpacing: "0.1em",
+    textAlign: "left",
+  },
+  contactInfo: {
+    fontWeight: "700",
+    lineHeight: "29px",
+  },
   left: {
     display: "block",
     "@media (min-width: 992px)": {
@@ -26,7 +45,11 @@ const footerStyle = {
     }
   },
   footer: {
+    marginTop: "1.35rem",
     padding: "0.9375rem 0",
+    background: "linear-gradient(135deg, #3D4E81 0%, #5753C9 48%, #6E7FF3 100%)",
+    width: "100%",
+    color: "#FFFFFF",
     textAlign: "center",
     display: "flex",
     zIndex: "2",
@@ -47,6 +70,16 @@ const footerStyle = {
     marginBottom: "0",
     padding: "0",
     marginTop: "0"
+  },
+  listItem: {
+    padding: "0",
+    margin: "0.6rem 0",
+    "& a, & a:hover": {
+      color: "white",
+    },
+    "& a:hover": {
+      
+    }
   },
   inlineBlock: {
     display: "inline-block",

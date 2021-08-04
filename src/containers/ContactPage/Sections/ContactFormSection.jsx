@@ -61,7 +61,7 @@ const ContactFormSection = ({ classes }) => {
           }}
         />
       </div>
-      <div>
+      <div style={{ marginTop: "25px" }}>
         <Button color="primary">Pesan Proyek</Button>
       </div>
     </div>

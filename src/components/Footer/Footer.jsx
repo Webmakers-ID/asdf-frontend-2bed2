@@ -9,11 +9,12 @@ import { List, ListItem, withStyles } from "@material-ui/core";
 import { FaLinkedin, FaFacebook, FaInstagram } from 'react-icons/fa';
 
 import Button from "components/CustomButtons/Button.jsx";
+import Image from "components/image"
 
 import footerStyle from "assets/jss/material-kit-react/components/footerStyle.jsx";
 
 function Footer({ ...props }) {
-  const { classes, whiteFont } = props;
+  const { classes, whiteFont, brand } = props;
   const footerClasses = classNames({
     [classes.footer]: true,
     [classes.footerWhiteFont]: whiteFont
@@ -21,7 +22,99 @@ function Footer({ ...props }) {
   return (
     <footer className={footerClasses}>
       <div className={classes.container}>
-        <div className={classes.left}>
+        <div className={classes.flex}>
+          <div className={classes.flexCol}>
+            <Button color="transparent" to="/">
+              <div style={{ width: "100px" }}>
+                <Image className="logo-white" imgName={brand} />
+              </div>
+            </Button>
+          </div>
+          <div className={classes.flexCol}>
+            <div className={classes.subHeader}>
+              Kontak
+            </div>
+            <List className={classes.list}>
+              <ListItem className={classes.listItem}>
+                <div style={{ width: "16px", marginRight: "0.75rem" }}>
+                  <Image className="logo-white" imgName="Footer - Phone Icon.png" />
+                </div>
+                +62 856 9297 0400
+              </ListItem>
+              <ListItem className={classes.listItem}>
+                <div style={{ width: "16px", marginRight: "0.75rem" }}>
+                  <Image className="logo-white" imgName="Footer - Email Icon.png" />
+                </div>
+                <a href="mailto:support@webmakers.id"><u>support@webmakers.id</u></a>
+              </ListItem>
+            </List>
+          </div>
+          <div className={classes.flexCol}>
+            <div className={classes.subHeader}>
+              Menu
+            </div>
+            <List className={classes.list}>
+              <ListItem className={classes.listItem}>
+                <Link
+                  to="/"
+                >
+                  Beranda
+                </Link>
+              </ListItem>
+              <ListItem className={classes.listItem}>
+                <Link
+                  to="/projects"
+                >
+                  Proyek
+                </Link>
+              </ListItem>
+              <ListItem className={classes.listItem}>
+                <Link
+                  to="/services"
+                >
+                  Layanan
+                </Link>
+              </ListItem>
+              <ListItem className={classes.listItem}>
+                <Link
+                  to="/team"
+                >
+                  Tim ASDF
+                </Link>
+              </ListItem>
+              <ListItem className={classes.listItem}>
+                <Link
+                  to="#"
+                >
+                  Blog
+                </Link>
+              </ListItem>
+            </List>
+          </div>
+          <div className={classes.flexCol}>
+            <div className={classes.subHeader}>
+              Layanan
+            </div>
+            <List className={classes.list}>
+              <ListItem className={classes.listItem}>
+                Web Development
+              </ListItem>
+              <ListItem className={classes.listItem}>
+                UI/UX Design
+              </ListItem>
+              <ListItem className={classes.listItem}>
+                Digital Marketing
+              </ListItem>
+              <ListItem className={classes.listItem}>
+                Mobile App Development
+              </ListItem>
+              <ListItem className={classes.listItem}>
+                Machine Learning Development
+              </ListItem>
+            </List>
+          </div>
+        </div>
+        {/* <div className={classes.left}>
           <List className={classes.list}>
             <ListItem className={classes.inlineBlock}>
               <Link
@@ -104,7 +197,7 @@ function Footer({ ...props }) {
           &copy; {1900 + new Date().getYear()}
           {" "}
           PT As Digital First
-        </div>
+        </div> */}
       </div>
     </footer>
   );
@@ -112,7 +205,8 @@ function Footer({ ...props }) {
 
 Footer.propTypes = {
   classes: PropTypes.object.isRequired,
-  whiteFont: PropTypes.bool
+  whiteFont: PropTypes.bool,
+  brand: PropTypes.string,
 };
 
 export default withStyles(footerStyle)(Footer);
