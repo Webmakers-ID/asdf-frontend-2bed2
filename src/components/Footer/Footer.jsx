@@ -24,7 +24,7 @@ function Footer({ ...props }) {
       <div className={classes.container}>
         <div className={classes.flex}>
           <div className={classes.flexCol}>
-            <Button color="transparent" to="/">
+            <Button color="transparent" to="/" className={classes.logo}>
               <div style={{ width: "100px" }}>
                 <Image className="logo-white" imgName={brand} />
               </div>
@@ -36,18 +36,71 @@ function Footer({ ...props }) {
             </div>
             <List className={classes.list}>
               <ListItem className={classes.listItem}>
-                <div style={{ width: "16px", marginRight: "0.75rem" }}>
+                <div style={{ width: "20px", marginRight: "0.75rem" }}>
                   <Image className="logo-white" imgName="Footer - Phone Icon.png" />
                 </div>
                 +62 856 9297 0400
               </ListItem>
               <ListItem className={classes.listItem}>
-                <div style={{ width: "16px", marginRight: "0.75rem" }}>
+                <div style={{ width: "20px", marginRight: "0.75rem" }}>
                   <Image className="logo-white" imgName="Footer - Email Icon.png" />
                 </div>
                 <a href="mailto:support@webmakers.id"><u>support@webmakers.id</u></a>
               </ListItem>
             </List>
+            <div className={classes.socialMedia}>
+              <Tooltip
+                id="instagram-twitter"
+                title="Follow us on linkedin"
+                placement="top"
+                classes={{ tooltip: classes.tooltip }}
+              >
+                <Button
+                  href="https://www.linkedin.com/company/webmakers-id"
+                  target="_blank"
+                  color="transparent"
+                  className={classes.block}
+                >
+                  <div style={{ width: "20px" }}>
+                    <Image imgName="Footer - Linkedin Icon.png" />
+                  </div>
+                </Button>
+              </Tooltip>
+              <Tooltip
+                id="instagram-facebook"
+                title="Follow us on facebook"
+                placement="top"
+                classes={{ tooltip: classes.tooltip }}
+              >
+                <Button
+                  color="transparent"
+                  href="https://www.facebook.com/webmakers.id"
+                  target="_blank"
+                  className={classes.block}
+                >
+                  <div style={{ width: "20px" }}>
+                    <Image imgName="Footer - Facebook Icon.png" />
+                  </div>
+                </Button>
+              </Tooltip>
+              <Tooltip
+                id="instagram-tooltip"
+                title="Follow us on instagram"
+                placement="top"
+                classes={{ tooltip: classes.tooltip }}
+              >
+                <Button
+                  color="transparent"
+                  href="https://www.instagram.com/asdftech.id"
+                  target="_blank"
+                  className={classes.block}
+                >
+                  <div style={{ width: "20px" }}>
+                    <Image imgName="Footer - Instagram Icon.png" />
+                  </div>
+                </Button>
+              </Tooltip>
+            </div>
           </div>
           <div className={classes.flexCol}>
             <div className={classes.subHeader}>
