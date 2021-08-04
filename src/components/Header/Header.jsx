@@ -8,19 +8,20 @@ import withStyles from "@material-ui/core/styles/withStyles";
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
 import IconButton from "@material-ui/core/IconButton";
-import Button from "@material-ui/core/Button";
 import Hidden from "@material-ui/core/Hidden";
 import Drawer from "@material-ui/core/Drawer";
 // @material-ui/icons
 import Menu from "@material-ui/icons/Menu";
 // core components
+import Button from "components/CustomButtons/Button.jsx";
 import headerStyle from "assets/jss/material-kit-react/components/headerStyle.jsx";
+import Image from "components/image"
 
 class Header extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      mobileOpen: false
+      mobileOpen: false,
     };
     this.handleDrawerToggle = this.handleDrawerToggle.bind(this);
     this.headerColorChange = this.headerColorChange.bind(this);
@@ -29,6 +30,10 @@ class Header extends React.Component {
     this.setState({ mobileOpen: !this.state.mobileOpen });
   }
   componentDidMount() {
+    // Declare display none untuk logo biru (onScroll logo)
+    document.body
+      .getElementsByClassName("logo-blue")[0]
+      .style.display = "none";
     if (this.props.changeColorOnScroll) {
       window.addEventListener("scroll", this.headerColorChange);
     }
@@ -43,6 +48,13 @@ class Header extends React.Component {
       document.body
         .getElementsByTagName("header")[0]
         .classList.add(classes[changeColorOnScroll.color]);
+      // Change Logo on Scroll
+      document.body
+        .getElementsByClassName("logo-white")[0]
+        .style.display = "none";
+      document.body
+        .getElementsByClassName("logo-blue")[0]
+        .style.display = "block";
     } else {
       document.body
         .getElementsByTagName("header")[0]
@@ -50,6 +62,13 @@ class Header extends React.Component {
       document.body
         .getElementsByTagName("header")[0]
         .classList.remove(classes[changeColorOnScroll.color]);
+      // Change Logo on Scroll
+      document.body
+        .getElementsByClassName("logo-white")[0]
+        .style.display = "block";
+      document.body
+        .getElementsByClassName("logo-blue")[0]
+        .style.display = "none";
     }
   }
   componentWillUnmount() {
@@ -64,6 +83,7 @@ class Header extends React.Component {
       rightLinks,
       leftLinks,
       brand,
+      brandOnScroll,
       fixed,
       absolute
     } = this.props;
@@ -73,7 +93,12 @@ class Header extends React.Component {
       [classes.absolute]: absolute,
       [classes.fixed]: fixed
     });
-    const brandComponent = <Button className={classes.title}>{brand}</Button>;
+
+    // const brandComponent = <Button className={classes.title} color="transparent" to="/">{brand}</Button>;
+    const brandComponent = <Button color="transparent" to="/"><div style={{ width: "100px" }}>
+      <Image className="logo-blue" imgName={brandOnScroll} />
+      <Image className="logo-white" imgName={brand} />
+    </div></Button>;
     return (
       <AppBar className={appBarClasses}>
         <Toolbar className={classes.container}>
@@ -141,6 +166,7 @@ Header.propTypes = {
   rightLinks: PropTypes.node,
   leftLinks: PropTypes.node,
   brand: PropTypes.string,
+  brandOnScroll: PropTypes.string,
   fixed: PropTypes.bool,
   absolute: PropTypes.bool,
   // this will cause the sidebar to change the color from

@@ -2,11 +2,11 @@ import React from "react"
 
 import Layout from "../containers/layout"
 import SEO from "../containers/seo"
-import LandingPage from "../containers/LandingPage/LandingPage"
+import ProjectsPage from "../containers/ProjectsPage/ProjectsPage"
 
 export default () => (
   <Layout>
-    <SEO title="Solusi Digital Berkualitas Tinggi" />
-    <LandingPage />
+    <SEO title="Proyek Kami" />
+    <ProjectsPage />
   </Layout>
 )

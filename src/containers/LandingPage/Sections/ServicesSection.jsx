@@ -14,27 +14,27 @@ const servicesList = [
   {
     title: "Web<br/>Development",
     desc: "Lorem ipsum dolor sit amet",
-    img: "clem-onojegaw.jpg"
+    img: "3. Our Service - Web Dev Section.png"
   },
   {
     title: "UI/UX<br/>Design",
     desc: "Lorem ipsum dolor sit amet",
-    img: "clem-onojegaw.jpg"
+    img: "3. Our Service - UIUX Section.png"
   },
   {
     title: "Digital<br/>Marketing",
     desc: "Lorem ipsum dolor sit amet",
-    img: "clem-onojegaw.jpg"
+    img: "3. Our Service - Digital Marketing Section.png"
   },
   {
     title: "Mobile App<br/>Development",
     desc: "Lorem ipsum dolor sit amet",
-    img: "clem-onojegaw.jpg"
+    img: "3. Our Service - Mobile App Section.png"
   },
   {
     title: "Machine<br/>Learning",
     desc: "Lorem ipsum dolor sit amet",
-    img: "clem-onojegaw.jpg"
+    img: "3. Our Service - ML Section.png"
   },
 ]
 
@@ -43,6 +43,10 @@ const ServicesSection = ({ classes }) => {
     <div className={classes.section}>
       <GridContainer justify="center">
         <GridItem xs={12} sm={12} md={8}>
+          <div id="services" style={{
+            position: "relative",
+            bottom: "75px"
+          }} />
           <h5 className={classes.description}>LAYANAN</h5>
           <h2 className={classes.title}>Layanan ASDF</h2>
         </GridItem>

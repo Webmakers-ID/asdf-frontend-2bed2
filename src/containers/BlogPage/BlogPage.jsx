@@ -12,13 +12,8 @@ import Parallax from "components/Parallax/Parallax.jsx";
 import landingPageStyle from "assets/jss/material-kit-react/views/landingPage.jsx";
 
 // Sections for this page
-// import ProductSection from "./Sections/ProductSection.jsx";
-import ServicesSection from "./Sections/ServicesSection.jsx";
-import AboutSection from "./Sections/AboutSection.jsx";
-import ProjectSection from "./Sections/ProjectSection.jsx"
-import WorkSection from "./Sections/WorkSection.jsx";
 
-class LandingPage extends React.Component {
+class BlogPage extends React.Component {
   render() {
     const { classes } = this.props;
     return (
@@ -27,7 +22,7 @@ class LandingPage extends React.Component {
           <div className={classes.container}>
             <GridContainer>
               <GridItem xs={12} sm={12} md={6}>
-                <h1 className={classes.title}>Solusi Digital Berkualitas Tinggi</h1>
+                <h1 className={classes.title}>Blog Page Lorem hehehehe</h1>
                 <h4>
                   ASDF Technology menghadirkan solusi digital untuk bisnis Anda. Mulai dari Pembuatan Aplikasi
                   Kustom, <i>Digital Marketing</i>, hingga <i>Artificial Intelligence</i>. Solusi yang kami buat
@@ -39,14 +34,8 @@ class LandingPage extends React.Component {
           </div>
         </Parallax>
         <div className={classNames(classes.main, classes.mainRaised)}>
-          {/* <div className={classes.container}>
-            <ProductSection />
-          </div> */}
-          <ServicesSection />
           <div className={classes.container}>
-            <AboutSection />
-            <ProjectSection />
-            <WorkSection />
+            Lorem ipsum
           </div>
         </div>
       </div>
@@ -54,4 +43,4 @@ class LandingPage extends React.Component {
   }
 }
 
-export default withStyles(landingPageStyle)(LandingPage);
+export default withStyles(landingPageStyle)(BlogPage);

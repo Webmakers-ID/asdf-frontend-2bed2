@@ -53,7 +53,6 @@ const headerStyle = {
   },
   title: {
     ...defaultFont,
-    fontFamily: '"Inter", Helvetica, Arial, sans-serif',
     lineHeight: "30px",
     fontSize: "18px",
     borderRadius: "3px",

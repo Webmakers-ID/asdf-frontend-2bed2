@@ -8,6 +8,8 @@ import { createMuiTheme } from '@material-ui/core/styles'
 import { ThemeProvider } from "@material-ui/styles"
 
 import "assets/scss/material-kit-react.scss?v=1.4.0"
+import "slick-carousel/slick/slick.css"
+import "slick-carousel/slick/slick-theme.css"
 import 'typeface-roboto'
 import 'typeface-roboto-slab'
 import "./layout.css"
@@ -31,7 +33,8 @@ const Layout = ({ children, noFooter }) => {
       <Header
         color="transparent"
         routes={dashboardRoutes}
-        brand="ASDF Technology"
+        brand="asdf-logo-white.png"
+        brandOnScroll="asdf-logo.png"
         rightLinks={<HeaderLinks />}
         fixed
         changeColorOnScroll={{

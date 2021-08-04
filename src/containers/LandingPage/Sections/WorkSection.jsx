@@ -23,7 +23,7 @@ class WorkSection extends React.Component {
           </GridItem>
         </GridContainer>
         <div>
-          <Button color="primary">Pesan Sekarang</Button>
+          <Button to="/contacts" color="primary">Pesan Sekarang</Button>
         </div>
       </div>
     );
