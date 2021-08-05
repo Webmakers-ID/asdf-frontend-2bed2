@@ -11,43 +11,43 @@ import ourTeamStyle from "assets/jss/material-kit-react/views/teamPageSections/o
 
 const memberList = [
   {
-    imgName: "our_value_1.png",
+    imgName: "nandi.jpg",
     title: "Firdaus Al-Ghifari",
+    desc: "Chief Executive Officer"
+  },
+  {
+    imgName: "nandi.jpg",
+    title: "M. Dzikra Muzaki",
+    desc: "Head of Design"
+  },
+  {
+    imgName: "shinta.jpg",
+    title: "Shinta Fauziah",
+    desc: "Digital Marketing Staff"
+  },
+  {
+    imgName: "tn.jpg",
+    title: "Alghifari Taufan N.",
+    desc: "Web Designer"
+  },
+  {
+    imgName: "nandi.jpg",
+    title: "Tasya Putri S.",
     desc: "Chief Happiness Officer"
   },
   {
-    imgName: "our_value_1.png",
-    title: "Firdaus Al-Ghifari",
+    imgName: "nandi.jpg",
+    title: "M. Destara Syanandi",
     desc: "Chief Happiness Officer"
   },
   {
-    imgName: "our_value_1.png",
-    title: "Firdaus Al-Ghifari",
+    imgName: "van.jpg",
+    title: "Puspita S Matovanni",
     desc: "Chief Happiness Officer"
   },
   {
-    imgName: "our_value_1.png",
-    title: "Firdaus Al-Ghifari",
-    desc: "Chief Happiness Officer"
-  },
-  {
-    imgName: "our_value_1.png",
-    title: "Firdaus Al-Ghifari",
-    desc: "Chief Happiness Officer"
-  },
-  {
-    imgName: "our_value_1.png",
-    title: "Firdaus Al-Ghifari",
-    desc: "Chief Happiness Officer"
-  },
-  {
-    imgName: "our_value_1.png",
-    title: "Firdaus Al-Ghifari",
-    desc: "Chief Happiness Officer"
-  },
-  {
-    imgName: "our_value_1.png",
-    title: "Firdaus Al-Ghifari",
+    imgName: "nandi.jpg",
+    title: "Putri Salsabila",
     desc: "Chief Happiness Officer"
   }
 ]
@@ -65,7 +65,7 @@ const OurTeamSection = ({ classes }) => {
         {memberList.map(({ imgName, title, desc }, index) => (
           <div key={index} className={classes.oneMember}>
             <div className={classes.valueImage}>
-              <Image imgName={imgName} />
+              <Image imgName={imgName} style={{ borderRadius:'50%' }}/>
             </div>
             <div className={classes.valueDesc}>
               <h4>{title}</h4>
