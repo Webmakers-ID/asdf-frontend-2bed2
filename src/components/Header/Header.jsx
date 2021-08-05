@@ -32,8 +32,8 @@ class Header extends React.Component {
   componentDidMount() {
     // Declare display none untuk logo biru (onScroll logo)
     document.body
-      .getElementsByClassName("logo-blue")[0]
-      .style.display = "none";
+      .getElementsByClassName("logo-white")[0]
+      .style.display = "block";
     if (this.props.changeColorOnScroll) {
       window.addEventListener("scroll", this.headerColorChange);
     }
@@ -96,8 +96,8 @@ class Header extends React.Component {
 
     // const brandComponent = <Button className={classes.title} color="transparent" to="/">{brand}</Button>;
     const brandComponent = <Button color="transparent" to="/"><div style={{ width: "100px" }}>
-      <Image className="logo-blue" imgName={brandOnScroll} />
-      <Image className="logo-white" imgName={brand} />
+      <Image className="logo-blue" style={{ display: "none" }} imgName={brandOnScroll} />
+      <Image className="logo-white" style={{ display: "none" }} imgName={brand} />
     </div></Button>;
     return (
       <AppBar className={appBarClasses}>
