@@ -11,7 +11,7 @@ import ourTeamStyle from "assets/jss/material-kit-react/views/teamPageSections/o
 
 const memberList = [
   {
-    imgName: "nandi.jpg",
+    imgName: "van.jpg",
     title: "Firdaus Al-Ghifari",
     desc: "Chief Executive Officer"
   },
@@ -33,22 +33,22 @@ const memberList = [
   {
     imgName: "nandi.jpg",
     title: "Tasya Putri S.",
-    desc: "Chief Happiness Officer"
+    desc: "Lorem Ipsum"
   },
   {
     imgName: "nandi.jpg",
     title: "M. Destara Syanandi",
-    desc: "Chief Happiness Officer"
+    desc: "Lorem Ipsum"
   },
   {
-    imgName: "van.jpg",
+    imgName: "vanni.jpg",
     title: "Puspita S Matovanni",
-    desc: "Chief Happiness Officer"
+    desc: "Lorem Ipsum"
   },
   {
-    imgName: "nandi.jpg",
+    imgName: "putsal.jpg",
     title: "Putri Salsabila",
-    desc: "Chief Happiness Officer"
+    desc: "Lorem Ipsum"
   }
 ]
 

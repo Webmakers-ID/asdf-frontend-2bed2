@@ -11,7 +11,10 @@ const teamStyle = {
     marginBottom: "1rem",
     marginTop: "30px",
     minHeight: "32px",
-    textDecoration: "none"
+    textDecoration: "none",
+    background: "-webkit-linear-gradient(-45deg, rgb(61,78,129) 0%, rgb(87,83,201) 50%, rgb(110,127,243) 100%)",
+    "-webkit-background-clip": "text",
+    "-webkit-text-fill-color": "transparent",
   },
   ...imagesStyle,
   itemGrid: {
