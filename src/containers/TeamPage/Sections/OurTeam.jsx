@@ -16,7 +16,7 @@ const memberList = [
     desc: "Chief Executive Officer"
   },
   {
-    imgName: "nandi.jpg",
+    imgName: "dzikra.jpg",
     title: "M. Dzikra Muzaki",
     desc: "Head of Design"
   },
