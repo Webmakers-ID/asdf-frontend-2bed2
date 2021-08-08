@@ -11,7 +11,7 @@ import ourTeamStyle from "assets/jss/material-kit-react/views/teamPageSections/o
 
 const memberList = [
   {
-    imgName: "van.jpg",
+    imgName: "alghi.jpg",
     title: "Firdaus Al-Ghifari",
     desc: "Chief Executive Officer"
   },
@@ -31,7 +31,7 @@ const memberList = [
     desc: "Web Designer"
   },
   {
-    imgName: "nandi.jpg",
+    imgName: "tasput.jpg",
     title: "Tasya Putri S.",
     desc: "Lorem Ipsum"
   },
@@ -41,7 +41,7 @@ const memberList = [
     desc: "Lorem Ipsum"
   },
   {
-    imgName: "vanni.jpg",
+    imgName: "nandi.jpg",
     title: "Puspita S Matovanni",
     desc: "Lorem Ipsum"
   },
