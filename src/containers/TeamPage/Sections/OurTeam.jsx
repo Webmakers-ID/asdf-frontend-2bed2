@@ -18,37 +18,37 @@ const memberList = [
   {
     imgName: "dzikra.jpg",
     title: "M. Dzikra Muzaki",
-    desc: "Head of Design"
+    desc: "Chief Operating Officer"
   },
   {
     imgName: "shinta.jpg",
     title: "Shinta Fauziah",
-    desc: "Digital Marketing Staff"
+    desc: "Product Manager & Digital Marketing"
   },
   {
     imgName: "tn.jpg",
     title: "Alghifari Taufan N.",
-    desc: "Web Designer"
+    desc: "Software Engineer & UI/UX Designer"
   },
   {
     imgName: "tasput.jpg",
     title: "Tasya Putri S.",
-    desc: "Lorem Ipsum"
+    desc: "Software Engineer"
   },
   {
     imgName: "nandi.jpg",
     title: "M. Destara Syanandi",
-    desc: "Lorem Ipsum"
+    desc: "Business Development & Software Engineer"
   },
   {
-    imgName: "nandi.jpg",
+    imgName: "van.jpg",
     title: "Puspita S Matovanni",
-    desc: "Lorem Ipsum"
+    desc: "Software Engineer"
   },
   {
     imgName: "putsal.jpg",
     title: "Putri Salsabila",
-    desc: "Lorem Ipsum"
+    desc: "UI/UX Designer"
   }
 ]
 
