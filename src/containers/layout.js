@@ -38,7 +38,7 @@ const Layout = ({ children, noFooter }) => {
         rightLinks={<HeaderLinks />}
         fixed
         changeColorOnScroll={{
-          height: 400,
+          height: 300,
           color: "white"
         }}
       />

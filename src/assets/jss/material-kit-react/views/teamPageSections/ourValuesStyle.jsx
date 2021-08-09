@@ -19,12 +19,16 @@ const ourValuesStyle = {
   },
   valuesList: {
     display: "flex",
+    flexWrap: "wrap",
     justifyContent: "center"
   },
   oneValue: {
     width: "33%",
     margin: "4%",
-    textAlign: "center"
+    textAlign: "center",
+    "@media (max-width: 500px)": {
+      width: "70%"
+    }
   },
   valueImage: {
     width: "50%",

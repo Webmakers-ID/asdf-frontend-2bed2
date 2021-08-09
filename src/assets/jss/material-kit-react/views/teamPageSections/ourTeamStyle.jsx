@@ -25,7 +25,10 @@ const ourTeamStyle = {
   oneMember: {
     width: "21%",
     margin: "2%",
-    textAlign: "center"
+    textAlign: "center",
+    "@media (max-width: 500px)": {
+      width: "41%"
+    },
   },
   valueImage: {
     width: "60%",
