@@ -23,7 +23,10 @@ const landingPageStyle = {
   subtitle: {
     fontSize: "1.313rem",
     maxWidth: "500px",
-    margin: "10px auto 0"
+    margin: "10px auto 0",
+    background: "-webkit-linear-gradient(-45deg, rgb(61,78,129) 0%, rgb(87,83,201) 50%, rgb(110,127,243) 100%)",
+    "-webkit-background-clip": "text",
+    "-webkit-text-fill-color": "transparent",
   },
   main: {
     background: "#FFFFFF",

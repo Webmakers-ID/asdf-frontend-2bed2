@@ -11,44 +11,44 @@ import ourTeamStyle from "assets/jss/material-kit-react/views/teamPageSections/o
 
 const memberList = [
   {
-    imgName: "our_value_1.png",
+    imgName: "alghi.jpg",
     title: "Firdaus Al-Ghifari",
-    desc: "Chief Happiness Officer"
+    desc: "Chief Executive Officer"
   },
   {
-    imgName: "our_value_1.png",
-    title: "Firdaus Al-Ghifari",
-    desc: "Chief Happiness Officer"
+    imgName: "dzikra.jpg",
+    title: "M. Dzikra Muzaki",
+    desc: "Chief Operating Officer"
   },
   {
-    imgName: "our_value_1.png",
-    title: "Firdaus Al-Ghifari",
-    desc: "Chief Happiness Officer"
+    imgName: "shinta.jpg",
+    title: "Shinta Fauziah",
+    desc: "Product Manager & Digital Marketing"
   },
   {
-    imgName: "our_value_1.png",
-    title: "Firdaus Al-Ghifari",
-    desc: "Chief Happiness Officer"
+    imgName: "tn.jpg",
+    title: "Alghifari Taufan N.",
+    desc: "Software Engineer & UI/UX Designer"
   },
   {
-    imgName: "our_value_1.png",
-    title: "Firdaus Al-Ghifari",
-    desc: "Chief Happiness Officer"
+    imgName: "tasput.jpg",
+    title: "Tasya Putri S.",
+    desc: "Software Engineer"
   },
   {
-    imgName: "our_value_1.png",
-    title: "Firdaus Al-Ghifari",
-    desc: "Chief Happiness Officer"
+    imgName: "nandi.jpg",
+    title: "M. Destara Syanandi",
+    desc: "Business Development & Software Engineer"
   },
   {
-    imgName: "our_value_1.png",
-    title: "Firdaus Al-Ghifari",
-    desc: "Chief Happiness Officer"
+    imgName: "van.jpg",
+    title: "Puspita S Matovanni",
+    desc: "Software Engineer"
   },
   {
-    imgName: "our_value_1.png",
-    title: "Firdaus Al-Ghifari",
-    desc: "Chief Happiness Officer"
+    imgName: "putsal.jpg",
+    title: "Putri Salsabila",
+    desc: "UI/UX Designer"
   }
 ]
 
@@ -65,7 +65,7 @@ const OurTeamSection = ({ classes }) => {
         {memberList.map(({ imgName, title, desc }, index) => (
           <div key={index} className={classes.oneMember}>
             <div className={classes.valueImage}>
-              <Image imgName={imgName} />
+              <Image imgName={imgName} style={{ borderRadius:'50%' }}/>
             </div>
             <div className={classes.valueDesc}>
               <h4>{title}</h4>
