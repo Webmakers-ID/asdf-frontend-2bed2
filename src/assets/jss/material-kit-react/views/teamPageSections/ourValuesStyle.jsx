@@ -26,7 +26,7 @@ const ourValuesStyle = {
     justifyContent: "center"
   },
   oneValue: {
-    width: "33%",
+    width: "25%",
     margin: "4%",
     textAlign: "center",
     "@media (max-width: 500px)": {

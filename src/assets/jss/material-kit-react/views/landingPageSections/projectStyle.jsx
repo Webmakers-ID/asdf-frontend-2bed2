@@ -25,6 +25,11 @@ const projectStyle = {
     justifyContent: "center",
     "& > *": {
       width: "22%"
+    },
+    "@media (max-width: 500px)": {
+      "& > *": {
+        width: "63%"
+      },
     }
   }
 };

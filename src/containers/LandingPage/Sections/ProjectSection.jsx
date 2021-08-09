@@ -15,53 +15,93 @@ import projectStyle from "assets/jss/material-kit-react/views/landingPageSection
 
 export const projectList = [
   {
-    imgName: "photo_innovation_battlefield_v2.png",
-    title: "Innovation Battlefield Universitas Indonesia",
+    imgName: "taman-siswa.jpg",
+    title: "Taman Siswa",
+    description: "Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.",
+    tags: [
+      "Web Development",
+    ]
+  },
+  {
+    imgName: "nusakarya.jpg",
+    title: "Nusakarya",
+    description: "Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.",
+    tags: [
+      "Web Development", "UI/UX Design"
+    ]
+  },
+  {
+    imgName: "businessweek.jpg",
+    title: "Business Week FIA UI",
+    description: "Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.",
+    tags: [
+      "Web Development", "UI/UX Design"
+    ]
+  },
+  {
+    imgName: "innovation-battlefield.jpg",
+    title: "Innovation Battlefield UI",
+    description: "Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.",
+    tags: [
+      "Web Development", "UI/UX Design"
+    ]
+  },
+  {
+    imgName: "alamsarideltamas.jpg",
+    title: "Restoran Alam Sari Deltamas",
     description: "Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.",
     tags: [
       "Web Development", "UI/UX Design", "Digital Marketing"
     ]
   },
   {
-    imgName: "photo_innovation_battlefield_v2.png",
-    title: "Innovation Battlefield Universitas Indonesia",
+    imgName: "idea.jpg",
+    title: "PT Isyana Delta Anugrah",
     description: "Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.",
     tags: [
       "Web Development", "UI/UX Design", "Digital Marketing"
     ]
   },
   {
-    imgName: "photo_innovation_battlefield_v2.png",
-    title: "Innovation Battlefield Universitas Indonesia",
+    imgName: "jmc.jpg",
+    title: "PT JM Constrindo Perkasa Engineering",
     description: "Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.",
     tags: [
       "Web Development", "UI/UX Design", "Digital Marketing"
     ]
   },
   {
-    imgName: "photo_innovation_battlefield_v2.png",
-    title: "Innovation Battlefield Universitas Indonesia",
+    imgName: "edp-fia.jpg",
+    title: "Executive Development Program FIA UI",
     description: "Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.",
     tags: [
       "Web Development", "UI/UX Design", "Digital Marketing"
     ]
   },
   {
-    imgName: "photo_innovation_battlefield_v2.png",
-    title: "Innovation Battlefield Universitas Indonesia",
+    imgName: "luj.jpg",
+    title: "PT Lentera Utama Jaya",
     description: "Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.",
     tags: [
       "Web Development", "UI/UX Design", "Digital Marketing"
     ]
   },
   {
-    imgName: "photo_innovation_battlefield_v2.png",
-    title: "Innovation Battlefield Universitas Indonesia",
+    imgName: "riniscake.jpg",
+    title: "Rini's Cake",
     description: "Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.",
     tags: [
       "Web Development", "UI/UX Design", "Digital Marketing"
     ]
-  }
+  },
+  // {
+  //   imgName: "photo_innovation_battlefield_v2.png",
+  //   title: "Innovation Battlefield Universitas Indonesia",
+  //   description: "Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.",
+  //   tags: [
+  //     "Web Development", "UI/UX Design", "Digital Marketing"
+  //   ]
+  // },
 ]
 
 function ProjectSection({ classes }) {

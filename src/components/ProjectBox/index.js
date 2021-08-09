@@ -10,7 +10,8 @@ export default function ProjectBox({ project }) {
       <div>
         <Image imgName={project.imgName} style={{
           borderTopLeftRadius: "12px",
-          borderTopRightRadius: "12px"
+          borderTopRightRadius: "12px",
+          height: "110px"
         }} />
       </div>
       <div>
