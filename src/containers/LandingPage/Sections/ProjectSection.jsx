@@ -15,53 +15,93 @@ import projectStyle from "assets/jss/material-kit-react/views/landingPageSection
 
 export const projectList = [
   {
-    imgName: "photo_innovation_battlefield_v2.png",
-    title: "Innovation Battlefield Universitas Indonesia",
-    description: "Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.",
+    imgName: "taman-siswa.jpg",
+    title: "Taman Siswa",
+    description: "Sebuah kelas A Levels, IB, dan SAT dengan harga paling terjangkau bersama tutor pelajar dari kampus ternama di dunia.",
     tags: [
-      "Web Development", "UI/UX Design", "Digital Marketing"
+      "Web Development",
     ]
   },
   {
-    imgName: "photo_innovation_battlefield_v2.png",
-    title: "Innovation Battlefield Universitas Indonesia",
-    description: "Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.",
+    imgName: "nusakarya.jpg",
+    title: "Nusakarya",
+    description: "Online marketplace khusus produk unik dan khas dari Indonesia. Dapat berupa produk kerajinan hingga makanan khas daerah dari Sabang sampai Merauke.",
     tags: [
-      "Web Development", "UI/UX Design", "Digital Marketing"
+      "Web Development", "UI/UX Design"
     ]
   },
   {
-    imgName: "photo_innovation_battlefield_v2.png",
-    title: "Innovation Battlefield Universitas Indonesia",
-    description: "Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.",
+    imgName: "businessweek.jpg",
+    title: "Business Week FIA UI",
+    description: "Sebuah acara yang diselenggarakan oleh Administrasi Niaga Fakultas Ilmu Administrasi Universitas Indonesia.",
     tags: [
-      "Web Development", "UI/UX Design", "Digital Marketing"
+      "Web Development", "UI/UX Design"
     ]
   },
   {
-    imgName: "photo_innovation_battlefield_v2.png",
-    title: "Innovation Battlefield Universitas Indonesia",
-    description: "Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.",
+    imgName: "innovation-battlefield.jpg",
+    title: "Innovation Battlefield UI",
+    description: "Kompetisi desain UX dengan rangkaian acara yang terdiri dari Masterclass, Battlefield, dan Exhibition.",
     tags: [
-      "Web Development", "UI/UX Design", "Digital Marketing"
+      "Web Development", "UI/UX Design"
     ]
   },
   {
-    imgName: "photo_innovation_battlefield_v2.png",
-    title: "Innovation Battlefield Universitas Indonesia",
-    description: "Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.",
+    imgName: "alamsarideltamas.jpg",
+    title: "Restoran Alam Sari Deltamas",
+    description: "Website untuk sebuah restoran Sunda modern yang menonjolkan suasana pedesaan yang berada di tengah kota.",
     tags: [
-      "Web Development", "UI/UX Design", "Digital Marketing"
+      "Web Development", "UI/UX Design"
     ]
   },
   {
-    imgName: "photo_innovation_battlefield_v2.png",
-    title: "Innovation Battlefield Universitas Indonesia",
-    description: "Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.",
+    imgName: "idea.jpg",
+    title: "PT Isyana Delta Anugrah",
+    description: "Website untuk sebuah perusahaan general trading dalam printing, stationary, cleaning service, dan produk kimia.",
     tags: [
-      "Web Development", "UI/UX Design", "Digital Marketing"
+      "Web Development", "UI/UX Design"
     ]
-  }
+  },
+  {
+    imgName: "jmc.jpg",
+    title: "PT JM Constrindo Perkasa Engineering",
+    description: "Website untuk perusahaan Pelaksanaan konstruksi.",
+    tags: [
+      "Web Development", "UI/UX Design"
+    ]
+  },
+  {
+    imgName: "edp-fia.jpg",
+    title: "Executive Development Program FIA UI",
+    description: "EDP adalah lembaga di bawah naungan FIA UI yang menyediakan program-program pengembangan eksekutif di hampir semua bidang fungsional manajemen.",
+    tags: [
+      "Web Development", "UI/UX Design"
+    ]
+  },
+  {
+    imgName: "luj.jpg",
+    title: "PT Lentera Utama Jaya",
+    description: "Website sebuah badan usaha jasa pengamanan dan perdagangan umum untuk general constructor, supplier, cleaning service mechanical, dll.",
+    tags: [
+      "Web Development", "UI/UX Design"
+    ]
+  },
+  {
+    imgName: "riniscake.jpg",
+    title: "Rini's Cake",
+    description: "Sebuah bisnis rumahan yang ada sejak 2016 yang menjual berbagai jenis kue dan puding.",
+    tags: [
+      "Web Development", "UI/UX Design"
+    ]
+  },
+  // {
+  //   imgName: "photo_innovation_battlefield_v2.png",
+  //   title: "Innovation Battlefield Universitas Indonesia",
+  //   description: "Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.",
+  //   tags: [
+  //     "Web Development", "UI/UX Design", "Digital Marketing"
+  //   ]
+  // },
 ]
 
 function ProjectSection({ classes }) {

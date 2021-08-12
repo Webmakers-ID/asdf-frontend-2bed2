@@ -9,7 +9,7 @@ export const ProjectBoxStyles = styled.span`
   text-align: left;
 
   & > div:last-child {
-    padding: 8px;
+    padding: 12px 16px;
   }
 
   h5 {
@@ -34,7 +34,7 @@ export const ProjectBoxStyles = styled.span`
     div {
       padding: 0 6px;
       margin: 3px;
-      font-size: 0.75em;
+      font-size: 0.65em;
       color: #50A7C2;
       border: 2px solid #50A7C2;
       border-radius: 6px;

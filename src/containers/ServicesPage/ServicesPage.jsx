@@ -20,7 +20,7 @@ class ServicesPage extends React.Component {
     const { classes } = this.props;
     return (
       <div>
-        <Parallax image={require("assets/img/TopLandingBg1.png")}>
+        <Parallax image={require("assets/img/TopLandingBg1-wide.png")}>
           <div className={classes.container}>
             <GridContainer>
               <GridItem xs={12} sm={12} md={6}>
