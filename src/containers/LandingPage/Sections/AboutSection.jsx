@@ -19,7 +19,10 @@ const AboutSection = ({ classes }) => {
         </GridItem>
       </GridContainer>
       <div>
-        Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.
+        Sekelompok tim dengan motivasi yang tinggi dalam
+        menghadirkan solusi digital dalam bentuk Aplikasi, <i>Digital Marketing</i>,
+        hingga <i>Artificial Intelligence</i>.
+        Solusi yang kami buat didesain untuk menyelesaikan masalah dengan efektif dan efisien.
       </div>
       <div style={{
         paddingTop: "1.5rem"
