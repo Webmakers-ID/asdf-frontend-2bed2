@@ -31,6 +31,22 @@ const projectStyle = {
         width: "63%"
       },
     }
+  },
+  slider: {
+    "& .slick-track": {
+      display: "flex",
+      alignItems: "center"
+    },
+    "& .slick-prev": {
+      "@media (max-width: 500px)": {
+        left: "-10px"
+      }
+    },
+    "& .slick-next": {
+      "@media (max-width: 500px)": {
+        right: "-10px"
+      }
+    }
   }
 };
 

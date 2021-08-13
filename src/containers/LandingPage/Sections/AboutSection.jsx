@@ -18,13 +18,22 @@ const AboutSection = ({ classes }) => {
           <h2 className={classes.title}>Tentang Kami</h2>
         </GridItem>
       </GridContainer>
-      <div>
-        Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.
+      <div style={{ display: "flex", justifyContent: "center"}}>
+        <span style={{ width: "85%" }}>
+          ASDF Technology terdiri dari para ahli di bidang Desain dan Pembuatan Aplikasi Digital.
+          Kami menghadirkan solusi bisnis berbentuk Aplikasi, <i>Digital Marketing</i>,
+          hingga <i>Artificial Intelligence</i>.
+        </span>
       </div>
       <div style={{
         paddingTop: "1.5rem"
       }}>
-        <Button color="primary">Lihat Detail</Button>
+        <Button
+          color="primary"
+          to="/team"
+        >
+          Lihat Detail
+        </Button>
       </div>
     </div>
   );

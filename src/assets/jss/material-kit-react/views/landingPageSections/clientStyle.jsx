@@ -1,9 +1,8 @@
 import { title } from "assets/jss/material-kit-react.jsx";
 
-const contactFormStyle = {
+const clientStyle = {
   section: {
-    paddingTop: "40px",
-    paddingBottom: "40px",
+    padding: "40px 0",
     textAlign: "center"
   },
   title: {
@@ -18,18 +17,17 @@ const contactFormStyle = {
     "-webkit-text-fill-color": "transparent",
   },
   description: {
-    color: "#999"
+    color: "#999",
   },
-  faqSection: {
-    margin: "0 35px",
-    paddingTop: "20px",
-    paddingBottom: "60px",
-    textAlign: "left"
+  flex: {
+    display: "flex",
   },
-  messageForm: {
-    width: "90%",
-    margin: "0 35px",
+  flexLeft: {
+    flexBasis: "55%",
   },
-};
+  flexRight: {
+    flexBasis: "40%",
+  },
+}
 
-export default contactFormStyle;
+export default clientStyle;

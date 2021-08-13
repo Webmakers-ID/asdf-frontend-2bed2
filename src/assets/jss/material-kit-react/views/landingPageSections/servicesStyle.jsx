@@ -28,12 +28,15 @@ const servicesStyle = {
     minHeight: "600px",
     display: "flex",
     "@media (max-width: 1050px)": {
+      padding: "20px 0",
       minHeight: "500px"
     },
     "@media (max-width: 700px)": {
+      padding: "12px 0",
       minHeight: "400px"
     },
     "@media (max-width: 500px)": {
+      padding: "4px 0",
       minHeight: "260px"
     }
   },

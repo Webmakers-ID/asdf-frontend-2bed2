@@ -16,6 +16,7 @@ import landingPageStyle from "assets/jss/material-kit-react/views/landingPage.js
 import ServicesSection from "./Sections/ServicesSection.jsx";
 import AboutSection from "./Sections/AboutSection.jsx";
 import ProjectSection from "./Sections/ProjectSection.jsx"
+import ClientSection from "./Sections/ClientSection.jsx";
 import WorkSection from "./Sections/WorkSection.jsx";
 
 class LandingPage extends React.Component {
@@ -29,8 +30,8 @@ class LandingPage extends React.Component {
               <GridItem xs={12} sm={12} md={6}>
                 <h1 className={classes.title}>Solusi Digital Berkualitas Tinggi</h1>
                 <h4>
-                  ASDF Technology menghadirkan solusi digital untuk bisnis Anda. Mulai dari Pembuatan Aplikasi
-                  Kustom, <i>Digital Marketing</i>, hingga <i>Artificial Intelligence</i>. Solusi yang kami buat
+                  ASDF Technology menghadirkan solusi digital untuk bisnis Anda. Mulai dari Pembuatan
+                  Aplikasi <i>Custom</i>, <i>Digital Marketing</i>, hingga <i>Artificial Intelligence</i>. Solusi yang kami buat
                   didesain untuk menyelesaikan masalah dengan efektif dan efisien.
                 </h4>
                 <br />
@@ -46,6 +47,7 @@ class LandingPage extends React.Component {
           <div className={classes.container}>
             <AboutSection />
             <ProjectSection />
+            {/* <ClientSection /> */}
             <WorkSection />
           </div>
         </div>
