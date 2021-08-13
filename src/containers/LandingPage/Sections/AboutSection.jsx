@@ -20,7 +20,7 @@ const AboutSection = ({ classes }) => {
       </GridContainer>
       <div>
         Sekelompok tim dengan motivasi yang tinggi dalam
-        menghadirkan solusi digital dalam bentuk Aplikasi, <i>Digital Marketing</i>,
+        menghadirkan solusi digital berbentuk Aplikasi, <i>Digital Marketing</i>,
         hingga <i>Artificial Intelligence</i>.
         Solusi yang kami buat didesain untuk menyelesaikan masalah dengan efektif dan efisien.
       </div>
