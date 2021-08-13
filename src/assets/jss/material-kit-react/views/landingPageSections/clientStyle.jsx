@@ -1,6 +1,6 @@
 import { title } from "assets/jss/material-kit-react.jsx";
 
-const projectStyle = {
+const clientStyle = {
   section: {
     padding: "40px 0",
     textAlign: "center"
@@ -17,27 +17,17 @@ const projectStyle = {
     "-webkit-text-fill-color": "transparent",
   },
   description: {
-    color: "#999"
+    color: "#999",
   },
-  multipleRowProjects: {
+  flex: {
     display: "flex",
-    flexWrap: "wrap",
-    justifyContent: "center",
-    "& > *": {
-      width: "22%"
-    },
-    "@media (max-width: 500px)": {
-      "& > *": {
-        width: "63%"
-      },
-    }
   },
-  slider: {
-    "& .slick-track": {
-      display: "flex",
-      alignItems: "center"
-    }
-  }
-};
+  flexLeft: {
+    flexBasis: "55%",
+  },
+  flexRight: {
+    flexBasis: "40%",
+  },
+}
 
-export default projectStyle;
+export default clientStyle;

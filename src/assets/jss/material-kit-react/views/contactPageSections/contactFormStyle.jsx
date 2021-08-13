@@ -21,10 +21,15 @@ const contactFormStyle = {
     color: "#999"
   },
   faqSection: {
+    margin: "0 35px",
     paddingTop: "20px",
     paddingBottom: "60px",
     textAlign: "left"
-  }
+  },
+  messageForm: {
+    width: "90%",
+    margin: "0 35px",
+  },
 };
 
 export default contactFormStyle;

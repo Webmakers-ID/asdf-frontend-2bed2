@@ -111,6 +111,7 @@ function ProjectSection({ classes }) {
     slidesToShow: 4,
     slidesToScroll: 1,
     initialSlide: 0,
+    // adaptiveHeight: true,
     nextArrow: (
       <div>
         <Image imgName="right-chevron.png" alt="next" />
@@ -135,7 +136,7 @@ function ProjectSection({ classes }) {
         },
       },
       {
-        breakpoint: 450,
+        breakpoint: 500,
         settings: {
           slidesToShow: 1,
         },
@@ -156,7 +157,7 @@ function ProjectSection({ classes }) {
         </GridItem>
       </GridContainer>
       <div>
-        <Slider {...settings}>
+        <Slider className={classes.slider} {...settings}>
           {projectList.map((project, index) => (
             <ProjectBox project={project} key={index} />
           ))}
