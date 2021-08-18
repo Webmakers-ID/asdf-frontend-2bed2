@@ -38,11 +38,17 @@ const projectStyle = {
       alignItems: "center"
     },
     "& .slick-prev": {
+      "&:before": {
+        content: "none",
+      },
       "@media (max-width: 500px)": {
         left: "-10px"
       }
     },
     "& .slick-next": {
+      "&:before": {
+        content: "none",
+      },
       "@media (max-width: 500px)": {
         right: "-10px"
       }

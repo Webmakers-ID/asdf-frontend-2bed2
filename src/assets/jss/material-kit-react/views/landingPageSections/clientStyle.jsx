@@ -21,12 +21,46 @@ const clientStyle = {
   },
   flex: {
     display: "flex",
+    width: "100%",
   },
   flexLeft: {
-    flexBasis: "55%",
+    flexBasis: "50%",
+    width: "50%",
   },
   flexRight: {
-    flexBasis: "40%",
+    flexBasis: "45%",
+    width: "45%",
+  },
+  slider: {
+    "& .slick-track": {
+      display: "flex",
+      alignItems: "center"
+    },
+    "& .slick-prev": {
+      "&:before": {
+        content: "none",
+      },
+      "@media (max-width: 500px)": {
+        left: "-10px"
+      }
+    },
+    "& .slick-next": {
+      "&:before": {
+        content: "none",
+      },
+      "@media (max-width: 500px)": {
+        right: "-10px"
+      }
+    }
+  },
+  clientBox: {
+    minHeight: "100px",
+    background: "linear-gradient(135deg, rgb(80,167,194), rgb(151,255,209))",
+    borderRadius: '8px',
+    padding: "25px 20px",
+    "& div": {
+      height: "100%",
+    }
   },
 }
 

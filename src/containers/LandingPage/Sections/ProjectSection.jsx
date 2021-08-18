@@ -114,12 +114,12 @@ function ProjectSection({ classes }) {
     // adaptiveHeight: true,
     nextArrow: (
       <div>
-        <Image imgName="right-chevron.png" alt="next" />
+        <Image style={{ width: "65%" }} imgName="rightarrow.png" alt="next" />
       </div>
     ),
     prevArrow: (
       <div>
-        <Image imgName="left-chevron.png" alt="next" />
+        <Image style={{ width: "65%" }} imgName="leftarrow.png" alt="next" />
       </div>
     ),
     responsive: [
