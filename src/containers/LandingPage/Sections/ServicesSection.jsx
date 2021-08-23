@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "gatsby"
+
 // @material-ui/core components
 import withStyles from "@material-ui/core/styles/withStyles";
 
@@ -14,27 +16,32 @@ const servicesList = [
   {
     title: "Web<br/>Development",
     desc: "Lorem ipsum dolor sit amet",
-    img: "3. Our Service - Web Dev Section.png"
+    img: "3. Our Service - Web Dev Section.png",
+    url: "/services/web-development",
   },
   {
     title: "UI/UX<br/>Design",
     desc: "Lorem ipsum dolor sit amet",
-    img: "3. Our Service - UIUX Section.png"
+    img: "3. Our Service - UIUX Section.png",
+    url: "/services/",
   },
   {
     title: "Digital<br/>Marketing",
     desc: "Lorem ipsum dolor sit amet",
-    img: "3. Our Service - Digital Marketing Section.png"
+    img: "3. Our Service - Digital Marketing Section.png",
+    url: "/services/",
   },
   {
     title: "Mobile App<br/>Development",
     desc: "Lorem ipsum dolor sit amet",
-    img: "3. Our Service - Mobile App Section.png"
+    img: "3. Our Service - Mobile App Section.png",
+    url: "/services/",
   },
   {
     title: "Machine<br/>Learning",
     desc: "Lorem ipsum dolor sit amet",
-    img: "3. Our Service - ML Section.png"
+    img: "3. Our Service - ML Section.png",
+    url: "/services/",
   },
 ]
 
@@ -52,15 +59,17 @@ const ServicesSection = ({ classes }) => {
         </GridItem>
       </GridContainer>
       <div className={classes.servicesBlock}>
-        {servicesList.map(({ title, desc, img }, index) => (
+        {servicesList.map(({ title, desc, img, url }, index) => (
           <BgImage key={index} className={classes.oneService} imgName={img}>
             <div className={classes.serviceBlockLeft}>
               <img src={rectBlockSvg} alt="|" />
             </div>
             <div className={classes.serviceBlockRight}>
-              <h3 dangerouslySetInnerHTML={{
-                __html: title
-              }} />
+              <Link to={url} style={{ color: "unset" }}>
+                <h3 dangerouslySetInnerHTML={{
+                  __html: title
+                }} />
+              </Link>
             </div>
           </BgImage>
         ))}
