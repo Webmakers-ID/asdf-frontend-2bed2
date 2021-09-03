@@ -23,25 +23,25 @@ const servicesList = [
     title: "UI/UX<br/>Design",
     desc: "Lorem ipsum dolor sit amet",
     img: "3. Our Service - UIUX Section.png",
-    url: "/services/",
+    url: "/services/uiux-design",
   },
   {
     title: "Digital<br/>Marketing",
     desc: "Lorem ipsum dolor sit amet",
     img: "3. Our Service - Digital Marketing Section.png",
-    url: "/services/",
+    url: "/services/digital-marketing",
   },
   {
     title: "Mobile App<br/>Development",
     desc: "Lorem ipsum dolor sit amet",
     img: "3. Our Service - Mobile App Section.png",
-    url: "/services/",
+    url: "/services/mobile-development",
   },
   {
     title: "Machine<br/>Learning",
     desc: "Lorem ipsum dolor sit amet",
     img: "3. Our Service - ML Section.png",
-    url: "/services/",
+    url: "/services/machine-learning",
   },
 ]
 
