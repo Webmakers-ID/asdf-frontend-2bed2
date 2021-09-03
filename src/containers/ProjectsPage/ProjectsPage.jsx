@@ -24,7 +24,7 @@ class ProjectsPage extends React.Component {
           <div className={classes.container}>
             <GridContainer>
               <GridItem xs={12} sm={12} md={6}>
-                <h1 className={classes.title}>Proyek-proyek Kami</h1>
+                <h1 className={classes.title}>Proyek Kami</h1>
                 <h4>
                   ASDF Technology berpengalaman dalam menggunakan teknologi modern
                   untuk membuat aplikasi yang diinginkan klien. Berikut adalah

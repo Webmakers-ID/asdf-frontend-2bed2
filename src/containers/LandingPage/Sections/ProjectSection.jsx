@@ -104,22 +104,25 @@ export const projectList = [
   // },
 ]
 
-function ProjectSection({ classes }) {
+function ProjectSection({ ...props }) {
+  const { classes, services } = props;
   const settings = {
     infinite: true,
     speed: 500,
     slidesToShow: 4,
     slidesToScroll: 1,
+    autoplay: true,
+    pauseOnFocus: true,
     initialSlide: 0,
     // adaptiveHeight: true,
     nextArrow: (
       <div>
-        <Image imgName="right-chevron.png" alt="next" />
+        <Image style={{ width: "65%" }} imgName="rightarrow.png" alt="next" />
       </div>
     ),
     prevArrow: (
       <div>
-        <Image imgName="left-chevron.png" alt="next" />
+        <Image style={{ width: "65%" }} imgName="leftarrow.png" alt="next" />
       </div>
     ),
     responsive: [
@@ -143,7 +146,7 @@ function ProjectSection({ classes }) {
       },
     ],
   }
-
+  
   return (
     <div className={classes.section}>
       <GridContainer justify="center">
@@ -153,14 +156,22 @@ function ProjectSection({ classes }) {
             bottom: "75px"
           }} />
           <h5 className={classes.description}>PROYEK</h5>
-          <h2 className={classes.title}>Proyek Kami</h2>
+          <h2 className={classes.title}>{services ? "Proyek Bersangkutan" : "Proyek Kami"}</h2>
         </GridItem>
       </GridContainer>
       <div>
         <Slider className={classes.slider} {...settings}>
-          {projectList.map((project, index) => (
-            <ProjectBox project={project} key={index} />
-          ))}
+          {projectList.map((project, index) => {
+            if (services) {
+              if (project.tags.includes(services)) {
+                return (<ProjectBox project={project} key={index} />)
+              }
+              else {
+                return (null)
+              }
+            }
+            return (<ProjectBox project={project} key={index} />)
+          })}
         </Slider>
       </div>
       <div style={{

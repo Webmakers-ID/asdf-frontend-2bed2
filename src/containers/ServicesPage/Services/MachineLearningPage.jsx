@@ -12,25 +12,31 @@ import Parallax from "components/Parallax/Parallax.jsx";
 import landingPageStyle from "assets/jss/material-kit-react/views/landingPage.jsx";
 
 // Sections for this page
-import OurValuesSection from "./Sections/OurValues.jsx"
-import OurTeamSection from "./Sections/OurTeam.jsx"
-import WorkSection from "../LandingPage/Sections/WorkSection.jsx";
+import ServicesSection from "../../LandingPage/Sections/ServicesSection.jsx";
+import WorkSection from "../../LandingPage/Sections/WorkSection.jsx";
+import ProjectSection from "../../LandingPage/Sections/ProjectSection.jsx"
+import PerkSection from "./Sections/PerkSection.jsx"
 
-class TeamPage extends React.Component {
+class MachineLearningPage extends React.Component {
   render() {
     const { classes } = this.props;
+    const perkList = [
+      "Lorem Ipsum",
+      "Lorem Ipsum",
+      "Lorem Ipsum",
+      "Lorem Ipsum",
+      "Lorem Ipsum",
+    ];
+
     return (
       <div>
-        <Parallax image={require("assets/img/OurTeamBg1-wide.png")}>
+        <Parallax image={require("assets/img/LayananBg1-wide.png")}>
           <div className={classes.container}>
             <GridContainer>
               <GridItem xs={12} sm={12} md={6}>
-                <h1 className={classes.title}>Tim Kami</h1>
+                <h1 className={classes.title}>Layanan Machine Learning</h1>
                 <h4>
-                  ASDF Technology terdiri dari para ahli di bidang Desain dan Pembuatan Aplikasi
-                  Digital. Mayoritas anggota tim kami juga telah menempuh pendidikan tinggi di jurusan
-                  Ilmu Komputer dan Sistem Informasi. Konsentrasi kami tersebar di dalam bidang
-                  Teknologi Informasi.
+                  Layanan Machine Learning kami Lorem Ipsum Dolor sit amet. Lorem Ipsum Dolor sit amet. Lorem Ipsum Dolor sit amet.
                 </h4>
                 <br />
               </GridItem>
@@ -39,14 +45,17 @@ class TeamPage extends React.Component {
         </Parallax>
         <div className={classNames(classes.main, classes.mainRaised)}>
           <div className={classes.container}>
-            <OurValuesSection />
-            <OurTeamSection />
-            <WorkSection />
+            <div>
+              <PerkSection perks={perkList} />
+              <ProjectSection services={"Machine Learning"} />
+            </div>
           </div>
+          <ServicesSection />
+          <WorkSection />
         </div>
       </div>
     );
   }
 }
 
-export default withStyles(landingPageStyle)(TeamPage);
+export default withStyles(landingPageStyle)(MachineLearningPage);
